@@ -1,0 +1,37 @@
+/* Universal Selector */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* class Selector */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  /* grid-gap: 10px; */
+  /* row-gap: 10px;
+  column-gap: 5px; */
+  gap: 10px;
+}
+.grid-container > div {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+.grid-container > div:nth-child(1) {
+  grid-column: 1 / span 3;
+  /* grid-column-start: 1;
+  grid-column-end: 4; */
+}
+/* .grid-container > div:nth-child(2) {
+  grid-column: 2 / span 2;
+} */
+.grid-container > div:nth-child(5) {
+  height: 500px;
+}
+.grid-container > div:nth-child(6) {
+  grid-column: span 2;
+}
+.grid-container > div:nth-child(7) {
+  grid-column: span 3;
+}

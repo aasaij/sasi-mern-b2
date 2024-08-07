@@ -1,0 +1,86 @@
+header,
+footer {
+  width: 100%;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  padding: 2px;
+}
+ul,
+li {
+  display: inline;
+}
+header > div {
+  width: 45%;
+  display: inline-block;
+}
+#d1 {
+  text-align: right;
+}
+a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+}
+a:hover {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: underline;
+}
+main {
+  min-height: 80vh;
+  background-color: aquamarine;
+  /* text-align: center; */
+}
+div {
+  width: 100%;
+  padding: 10px;
+}
+table,
+tr,
+td,
+th {
+  border-width: 1px;
+  border-style: solid;
+  border-collapse: collapse;
+  padding: 5px;
+}
+thead {
+  background-color: antiquewhite;
+}
+tbody {
+  background-color: white;
+}
+/* tr:nth-child(even) {
+  background-color: blanchedalmond;
+} */
+tr:hover {
+  background-color: blanchedalmond;
+}
+/* class selector */
+.container {
+  background-color: purple;
+  display: flex;
+  padding: 20px;
+  margin-left: 30px;
+  width: 80%;
+  border-radius: 5px;
+  /* text-align: center; */
+  /* align-items: center; */
+  justify-content: center;
+}
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="date"] {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.login {
+  margin: 10px;
+  background-color: yellowgreen;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  width: 500px;
+}

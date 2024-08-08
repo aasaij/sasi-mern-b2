@@ -16,11 +16,18 @@
       <h1 class="text-center">Just a Fun!</h1>
       <form action="">
         <label for="guessNum" class="form-label">
-          Enter your guess number here
+          Enter your guess number from 1 to 10
         </label>
         <input type="number" id="guessNum" class="form-control" />
-        <button type="button" class="btn btn-primary p-2 m-3">Submit</button>
-        <label for="" id="resultLabel" class="form-label"></label>
+        <button type="button" class="btn btn-primary p-2 m-3" id="btnGuess">
+          Submit
+        </button>
+        <button type="button" class="btn btn-warning p-2 m-3" id="btnReset">
+          Try Again
+        </button>
+
+        <label for="" id="resultWon" class="form-label text-success"></label>
+        <label for="" id="resultFail" class="form-label text-warning"></label>
       </form>
     </div>
     <script
@@ -28,5 +35,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="guess.js"></script>
   </body>
 </html>
